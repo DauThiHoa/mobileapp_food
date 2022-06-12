@@ -5,6 +5,7 @@ import React from "react";
 import Home from "../components/Home";
 import MainStackNavigation from "./MainStackNavigation";
 const Tab = createBottomTabNavigator();
+
 const BottomNav = () => {
   return (
     <Tab.Navigator
