@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, ScrollViewBase } from "react-native";
 import Constants from "expo-constants";
 import { Image, TextInput } from "react-native";
 import { Button, SafeAreaView, Alert } from "react-native"; 
-import { ScrollView } from "react-native";
+import { ScrollView } from "react-native"; 
 
 const ProductDetails = () => {
   // export default function productDetails() {
@@ -124,11 +124,15 @@ const ProductDetails = () => {
         // keyboardType="numeric"
       />
        <Button  
-       style={styles.buy}
+       style={{flex : 1 ,
+          width: 25,
+          height: 25,
+          backgroundColor: "green", 
+          marginLeft:50 }}
           backgroundColor="green"
           title="Buy Now"
           onPress={() => Alert.alert("Buy Now")}
-        /> 
+        />  
       
     </View>
 
